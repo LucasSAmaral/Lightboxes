@@ -23,7 +23,6 @@ var Lightbox = {
         box.css({
             'background': cor,
             'max-width': largura,
-            //'margin-left': ((largura/2)*-1)
         });
         box.appendTo(container);
 
@@ -37,10 +36,10 @@ var Lightbox = {
 
         container.appendTo($('body'));
 
-        Lightbox.margem();
+        Lightbox.ajustaMargem();
     },
 
-    "margem": function() {
+    "ajustaMargem": function() {
 
             var conteudoWidth = $('.conteudo').innerWidth();
             $('.conteudo').css({
@@ -51,5 +50,5 @@ var Lightbox = {
 }
 
 $(window).resize(function(){
-    Lightbox.margem();
+    Lightbox.ajustaMargem();
 });
