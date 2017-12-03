@@ -14,7 +14,7 @@ var Lightbox = {
         fundo.attr('class','fundo');
         fundo.appendTo(container);
         fundo.click(function(){
-            container.hide();
+            container.remove();
         });
 
         var box = $('<div>');
@@ -23,7 +23,7 @@ var Lightbox = {
         box.css({
             'background': cor,
             'max-width': largura,
-            'margin-left': ((largura/2)*-1)
+            //'margin-left': ((largura/2)*-1)
         });
         box.appendTo(container);
 
@@ -31,21 +31,21 @@ var Lightbox = {
         btn_fechar.attr('class','fechar');
         btn_fechar.text('X');
         btn_fechar.click(function(){
-            container.hide();
+            container.remove();
         });
         btn_fechar.appendTo(box);
 
         container.appendTo($('body'));
 
-        // Lightbox.margem();
-    }
+        Lightbox.margem();
+    },
 
-    // "margem": function() {
+    "margem": function() {
 
-    //         var conteudoWidth = $('.conteudo').innerWidth();
-    //         $('.conteudo').css({
-    //             "margin-left":  (conteudoWidth/2)*-1
-    //         });
+            var conteudoWidth = $('.conteudo').innerWidth();
+            $('.conteudo').css({
+                "margin-left":  (conteudoWidth/2)*-1
+            });
        
-    // }
+    }
 }
