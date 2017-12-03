@@ -22,7 +22,7 @@ var Lightbox = {
         box.text(texto);
         box.css({
             'background': cor,
-            'width': largura,
+            'max-width': largura,
             'margin-left': ((largura/2)*-1)
         });
         box.appendTo(container);
