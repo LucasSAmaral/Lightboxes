@@ -36,7 +36,8 @@ body {
   height: 300px;
   z-index: 2;
   left: 50%;
-  padding: 20px; }
+  padding: 20px;
+  top: calc(50% - 150px); }
 .lightbox .fechar {
   display: block;
   float: right;
