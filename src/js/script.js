@@ -36,5 +36,16 @@ var Lightbox = {
         btn_fechar.appendTo(box);
 
         container.appendTo($('body'));
+
+        // Lightbox.margem();
     }
+
+    // "margem": function() {
+
+    //         var conteudoWidth = $('.conteudo').innerWidth();
+    //         $('.conteudo').css({
+    //             "margin-left":  (conteudoWidth/2)*-1
+    //         });
+       
+    // }
 }
