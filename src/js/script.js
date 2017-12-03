@@ -49,3 +49,7 @@ var Lightbox = {
        
     }
 }
+
+$(window).resize(function(){
+    Lightbox.margem();
+});
